@@ -9,10 +9,10 @@ api = Api(app)
 CLIENTES = []
 
 resource_fields = {
-    'nome': fields.String('_nome', '_nome'),
-    'codigo': fields.Integer('_codigo', '_codigo'),
-    'cnpjcpf': fields.String('_cnpjcpf', '_cnpjcpf'),
-    '_tipo.name': fields.String('_tipo.name', '_tipo.name')
+    'nome': fields.String('', '_nome'),
+    'codigo': fields.String('', '_codigo'),
+    'cnpjcpf': fields.String('', '_cnpjcpf'),
+    'tipo': fields.String('', '_tipo.name')
 }
 
 def encontrar_cliente(cliente_id):
